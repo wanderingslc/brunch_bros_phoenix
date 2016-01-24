@@ -29,5 +29,8 @@ config :phoenix, :generators,
   binary_id: false
 
 
-config :brunch_bros_phoenix, BrunchBros.Repo,
-  adapter: Ecto.Adapters.Postgres
+config :brunch_bros_phoenix, BrunchBrosPhoenix.Repo, 
+  adapter: Ecto.Adapters.Postgres,
+  database: "brunch_bros_phoenix",
+  username: "postgres",
+  password: "postgres"

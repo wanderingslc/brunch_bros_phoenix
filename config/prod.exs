@@ -24,9 +24,9 @@ config :logger, level: :info
 
 #database config
 config :brunch_bros_phoenix, BrunchBrosPhoenix.Repo,
-    adapter: Ecto.Adapters.Postgress,
-    url: System.get_env("DATABASE_URL"),
-    pool_size: 20
+  adapter: Ecto.Adapters.Postgres,
+  url: System.get_env("DATABASE_URL"),
+  pool_size: 20
 
 # ## SSL Support
 #

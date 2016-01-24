@@ -19,7 +19,7 @@ defmodule BrunchBrosPhoenix.Mixfile do
   def application do
     [mod: {BrunchBrosPhoenix, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :ecto]]
   end
 
   # Specifies which paths to compile per environment.
@@ -36,7 +36,8 @@ defmodule BrunchBrosPhoenix.Mixfile do
      {:phoenix_html, "~> 2.3"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:ecto, "~> 1.1"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
