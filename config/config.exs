@@ -27,3 +27,7 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+
+config :brunch_bros_phoenix, BrunchBros.Repo,
+  adapter: Ecto.Adapters.Postgres
