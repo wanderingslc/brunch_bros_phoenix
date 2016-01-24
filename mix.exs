@@ -37,7 +37,7 @@ defmodule BrunchBrosPhoenix.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
-     {:ecto, "~> 1.1"}]
+     {:ecto, "~> 1.1.2"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
