@@ -1,0 +1,28 @@
+<h2>Listing brunchs</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for brunch <- @brunchs do %>
+    <tr>
+      <td><%= brunch.name %></td>
+      <td><%= brunch.address %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: brunch_path(@conn, :show, brunch), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: brunch_path(@conn, :edit, brunch), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: brunch_path(@conn, :delete, brunch), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New brunch", to: brunch_path(@conn, :new) %>

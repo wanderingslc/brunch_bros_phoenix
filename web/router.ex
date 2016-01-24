@@ -17,7 +17,9 @@ defmodule BrunchBrosPhoenix.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/about", AboutController, :show
     resources "/users", UserController
+    resources "/brunchs", BrunchController
   end
 
   # Other scopes may use custom stacks.

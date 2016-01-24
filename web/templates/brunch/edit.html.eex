@@ -1,0 +1,6 @@
+<h2>Edit brunch</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: brunch_path(@conn, :update, @brunch) %>
+
+<%= link "Back", to: brunch_path(@conn, :index) %>
