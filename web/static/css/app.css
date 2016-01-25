@@ -17,11 +17,11 @@ body, form, ul, table {
 form.link, form.button {
   display: inline;
 }
-
+body {padding-top: 70px;}
 /* Custom page header */
-.header {
+/*.header {
   border-bottom: 1px solid #e5e5e5;
-}
+}*/
 .logo {
   width: 519px;
   height: 71px;
