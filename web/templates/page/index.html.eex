@@ -1,6 +1,26 @@
 <div class="jumbotron">
   <h2>Welcome to Brunch Bro's!</h2>
-  <p class="lead">A group of guys who like to eat brunch in good old Salt Lake City, Utah.</p>
+  <p class="lead">A group of guys who like to eat brunch in good old Salt Lake City, Utah.  Info considering putting in this block.</p>
+  <ul>
+    <li>Image</li>
+    <li>Location</li>
+    <li>Website</li>
+    <li>Brief Description</li>
+    <li>Combined Star Rating</li>
+  </ul>
 </div>
 
+<h4>Reviews here, added comment style.</h4>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Review 1
+    </div>
+    <div class="panel-body">
+        Stan liked the chiliquiles. I think that's how they are spelled. This is the first idea for displaying the comments.
+    </div>
+</div>
 
+<div class="well">
+    <h4>Review 2</h4>
+    <p>Maybe well's are the way to go.</p>
+</div>

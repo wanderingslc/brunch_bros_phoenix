@@ -9,7 +9,13 @@ body, form, ul, table {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+.user-style {
+    
+}
+.profile-pic {
+        width: 140px;
+        height: 140px;
+    }
 /* Phoenix flash messages */
 .alert:empty { display: none; }
 
@@ -76,3 +82,4 @@ body {padding-top: 70px;}
     border-bottom: 0;
   }
 }
+

@@ -1,32 +1,88 @@
-<h2>Listing users</h2>
+<div class="user-style">
+  <h2>Listing users</h2>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>First name</th>
-      <th>Last name</th>
-      <th>Bio</th>
-      <th>Favorite drink</th>
+<div class="col-md-4">
+  <div class="panel panel-primary ">
+    <div class="panel-heading">Scott! </div>
+    <div class="panel-body">
+      <img src="images/cat1.png" class="img-rounded profile-pic"/>
+      <p>Bio info here. Clicking will go to individual page.</p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-success ">
+    <div class="panel-heading">Ryan! </div>
+    <div class="panel-body">
+      <img src="images/cat2.png" class="img-circle profile-pic"/>
+      <p>Bio info here. Clicking will go to individual page.</p>
+    </div>
+  </div>
+</div>
 
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-<%= for user <- @users do %>
-    <tr>
-      <td><%= user.first_name %></td>
-      <td><%= user.last_name %></td>
-      <td><%= user.bio %></td>
-      <td><%= user.favorite_drink %></td>
+<div class="col-md-4">
+  <div class="panel panel-info ">
+    <div class="panel-heading">Ben! </div>
+    <div class="panel-body">
+      <img src="images/cat3.png" class="img-circle profile-pic"/>
+      <p>Bio info here. Clicking will go to individual page.</p>
+    </div>
+  </div>
+</div>
 
-      <td class="text-right">
-        <%= link "Show", to: user_path(@conn, :show, user), class: "btn btn-default btn-xs" %>
-        <%= link "Edit", to: user_path(@conn, :edit, user), class: "btn btn-default btn-xs" %>
-        <%= link "Delete", to: user_path(@conn, :delete, user), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
-      </td>
-    </tr>
-<% end %>
-  </tbody>
-</table>
+<div class="col-md-4">
+  <div class="panel panel-warning ">
+    <div class="panel-heading">Stan! </div>
+    <div class="panel-body">
+      <img src="images/cat4.png" class="img-circle profile-pic"/>
+      <p>Bio info here. Clicking will go to individual page.</p>
+    </div>
+  </div>
+</div>
 
-<%= link "New user", to: user_path(@conn, :new) %>
+<div class="col-md-4">
+  <div class="panel panel-danger ">
+    <div class="panel-heading">Logan! </div>
+    <div class="panel-body">
+      <img src="images/cat5.png" class="img-circle profile-pic"/>
+      <p>Bio info here. Clicking will go to individual page.</p>
+    </div>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Bio</th>
+        <th>Favorite drink</th>
+
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+  <%= for user <- @users do %>
+      <tr>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.bio %></td>
+        <td><%= user.favorite_drink %></td>
+
+        <td class="text-right">
+          <%= link "Show", to: user_path(@conn, :show, user), class: "btn btn-default btn-xs" %>
+          <%= link "Edit", to: user_path(@conn, :edit, user), class: "btn btn-default btn-xs" %>
+          <%= link "Delete", to: user_path(@conn, :delete, user), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+        </td>
+      </tr>
+  <% end %>
+    </tbody>
+  </table>
+
+  <%= link "New user", to: user_path(@conn, :new) %>
+</div>
